@@ -1,0 +1,22 @@
+version: '3'
+services:
+  web:
+    platform: linux/amd64
+    container_name: demo-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+
+  ngrok:
+    image: ngrok/ngrok:latest
+    command:
+    - "start"
+    - "--all"
+    - "--config"
+    - "/etc/ngrok.yml"
+    volumes:
+      - ./ngrok.yml:/etc/ngrok.yml
+    ports:
+      - 4040:4040

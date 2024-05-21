@@ -1,0 +1,8 @@
+authtoken: { authToken }
+tunnels:
+  api:
+    addr: demo-api:8080
+    proto: http
+    schemes:
+      - https
+version: '2'
