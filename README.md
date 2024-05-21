@@ -28,6 +28,8 @@ docker-compose up -d
 可以先開啟下列網址查看隨機 domain 是什麼
 
 http://localhost:4040/status
+<img width="1297" alt="截圖 2024-05-21 晚上11 37 18" src="https://github.com/Leoyang183/ngrok_demo/assets/9442209/352877dd-2ce7-4215-9215-46c0c54e1b91">
+
 
 或者可以到官網 endpoint 查看
 
